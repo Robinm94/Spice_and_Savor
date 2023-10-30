@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Your valuable feedback
+        </title>
+        <style>
+            .b{
+                position: absolute;
+                bottom: 10px;
+            }
+        </style>
+        <link rel="icon" href="images/logo.jpg">
+    </head>
+    <body> <header>
+        <img src="images/food.jpg" width="200" height="200">
+        <div class="s"><h1><b><i> Spice and Savor</i></b></h1></div>
+    </header>
+
+    
+        <h3>Please provide feedback</h3>
+        <form id="myForm" action="" method="get" autocomplete="on">
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstName" accesskey="F" required autofocus><br><br>
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="lastName" accesskey="L" required ><br><br>
+            <p>Which one you like the most:</p>
+            <input type="checkbox" id="review1" name="review1" value="review1">Indian Cuisine</input><br>
+                <input type="checkbox" id="review2" name="review2" value="review2">Chinese Cuisine</input><br>
+                <input type="checkbox" id="review3" name="review3" value="review3">Mexican Cuisine</input><br><br>
+            <label for="comment">Reviews:</label><br>
+            <textarea name="comments" rows="5" cols="50" placeholder="Share your review about recipes."></textarea><br><br>
+
+            <label for="comment1">Which new recipes you want from us?</label><br>
+            <textarea name="comments1" rows="5" cols="50" placeholder="Share new recipes names."></textarea><br><br>
+
+            <button type="submit" value="Submit">Submit</button>
+
+            <button type="reset" value="Reset">Reset</button>
+        </form>
+       
+
+    </body>
+</html>
