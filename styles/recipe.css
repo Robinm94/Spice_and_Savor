@@ -3,13 +3,13 @@ body {
 }
 
 .recipe-title {
-    font-family: montserrat,Arial,Helvetica,sans-serif;
+    font-family: montserrat, Arial, Helvetica, sans-serif;
     font-weight: 700;
     letter-spacing: 0.5px;
     font-style: italic;
 }
 
-.time-service-content{
+.time-service-content {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -17,25 +17,28 @@ body {
     margin-bottom: 15px;
 }
 
-.time-service-content img{
+.time-service-content img {
     height: 1.5em;
 }
 
-.time-service-content b{
-    padding-left:15px;
-    padding-right:10px;
+.time-service-content b {
+    padding-left: 15px;
+    padding-right: 10px;
 }
 
-.ingredients h2, .directions h2{
+.ingredients h2,
+.directions h2 {
     font-style: italic;
     margin-block-end: 0.2em;
 }
 
-.ingredients ul, .directions ol, .directions p{
+.ingredients ul,
+.directions ol,
+.directions p {
     margin-block-start: 0.5em;
 }
 
-.food-img{
+.food-img {
     display: block;
     max-width: 60%;
     margin: auto;

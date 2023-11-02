@@ -9,6 +9,7 @@
     </title>
     <link rel="icon" href="images/logo.jpg">
     <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/feedback.css">
 </head>
 
 <body>
@@ -34,29 +35,38 @@
     </header>
 
     <main>
-        <h3>Please provide feedback</h3>
-        <form id="myForm" action="" method="get" autocomplete="on">
-            <label for="firstname">First Name:</label>
-            <input type="text" name="firstName" accesskey="F" required autofocus><br><br>
-            <label for="lastname">Last Name:</label>
-            <input type="text" name="lastName" accesskey="L" required><br><br>
-            <p>Which one you like the most:</p>
-            <input type="checkbox" id="review1" name="review1" value="review1">Indian Cuisine</input><br>
-            <input type="checkbox" id="review2" name="review2" value="review2">Chinese Cuisine</input><br>
-            <input type="checkbox" id="review3" name="review3" value="review3">Mexican Cuisine</input><br><br>
-            <label for="comment">Reviews:</label><br>
-            <textarea name="comments" rows="5" cols="50"
-                placeholder="Share your review about recipes."></textarea><br><br>
+        <div class="form-content">
+            <h2>Please provide feedback</h2>
+            <form id="myForm" class="feedback-form" action="" method="get" autocomplete="on">
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstName" accesskey="F" required autofocus><br><br>
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="lastName" accesskey="L" required><br>
+                <p>Which one you like the most:</p>
+                <input type="checkbox" class="checkbox" id="review1" name="review1" value="review1"><label for="review1">Indian Cuisine</label></input><br>
+                <input type="checkbox" id="review2" name="review2" value="review2"><label for="review2">Chinese Cuisine</label></input><br>
+                <input type="checkbox" id="review3" name="review3" value="review3"><label for="review3">Mexican Cuisine</label></input><br><br>
+                <label for="comment">Reviews:</label><br>
+                <textarea name="comments" rows="5" cols="50"
+                    placeholder="Share your review about recipes."></textarea><br><br>
 
-            <label for="comment1">Which new recipes you want from us?</label><br>
-            <textarea name="comments1" rows="5" cols="50" placeholder="Share new recipes names."></textarea><br><br>
+                <label for="comment1">Which new recipes you want from us?</label><br>
+                <textarea name="comments1" rows="5" cols="50" placeholder="Share new recipes names."></textarea><br><br>
 
-            <button type="submit" value="Submit">Submit</button>
+                <button type="submit" value="Submit">Submit</button>
 
-            <button type="reset" value="Reset">Reset</button>
-        </form>
+                <button type="reset" value="Reset">Reset</button>
+                <div class="end"></div>
+            </form>
+        </div>
     </main>
-
+    <footer>
+        <div class="footer-div">
+            <div>Contact us: <a href="tel:123-456-7890">123-456-7890</a></div>
+            <div>Email: <a href="mailto:spiceandsavor@gmail.com">spiceandsavor@gmail.com</a></div>
+            <div><a href="feedback.html">Feedback</a></div>
+        </div>
+    </footer>
 </body>
 
 </html>
