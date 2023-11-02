@@ -1,0 +1,77 @@
+.yy {
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: 300px 1fr;
+    gap: 1rem;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    font: 500 100%/1.5 system-ui;
+    background: rgba(244, 240, 240, 0.91);
+}
+
+.yy img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 650px) {
+    .yy {
+        display: block;
+        font-size: 80%;
+    }
+
+    .yy p {
+        position: relative;
+        margin: -3rem 0 2rem 1rem;
+        padding: 1rem;
+        background: rgba(white, 0.8);
+    }
+}
+
+.yy img:hover {
+    transform: scale(1.1);
+}
+
+.mainn {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+}
+
+.cuisine {
+
+    flex: 1;
+    padding: 2rem;
+    max-width: 1000px;
+    margin-top: 50px;
+    background: rgba(244, 240, 240, 0.91);
+    max-width: 30%;
+    color: rgba(252, 94, 128, 0.8);
+}
+
+.cuisine img {
+    width: 350px;
+    height: 200px;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+
+.cuisine .if {
+
+    text-align: center;
+    background-color: rgb(248, 184, 129);
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: 700;
+    color: maroon;
+}
+
+@media (max-width: 650px) {
+    .cuisine {
+        display: block;
+        font-size: 80%;
+    }
+
+}
