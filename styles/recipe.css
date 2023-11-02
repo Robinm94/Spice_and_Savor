@@ -38,6 +38,34 @@ body {
     margin-block-start: 0.5em;
 }
 
+.directions p {
+    display: inline;
+    margin: 1em 0;
+}
+
+.directions ol {
+    margin:0 0 1.5em;
+    padding:0;
+    counter-reset:item;
+ }
+
+
+.directions ol li {
+    margin:0;
+  padding:0.5em 0 0.5em 2em;
+  text-indent:-2em;
+  list-style-type:none;
+  counter-increment:item;
+  }
+
+.directions ol li:before{
+    display:inline-block;
+  width:1.5em;
+  font-weight:bolder;
+  text-align:right;
+  content:counter(item) ".";
+}
+
 .food-img {
     display: block;
     max-width: 60%;
