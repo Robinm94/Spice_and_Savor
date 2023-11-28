@@ -26,6 +26,33 @@ body {
     padding-right: 10px;
 }
 
+.options-div{
+    display: flex;
+    margin: 1em auto;
+    justify-content: center;
+    
+}
+
+.option-button {
+    width: 150px;
+    border: 1px solid maroon;
+    background-color: #fff;
+    color: maroon;
+    box-shadow: 2px 2px 0px 1px maroon;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 30px;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.option-button:hover {
+    background-color: maroon;
+    color: #fff;
+}
+
 .ingredients h2,
 .directions h2 {
     font-style: italic;
@@ -44,26 +71,40 @@ body {
 }
 
 .directions ol {
-    margin:0 0 1.5em;
-    padding:0;
-    counter-reset:item;
- }
+    margin: 0 0 1.5em;
+    padding: 0;
+    counter-reset: item;
+}
 
 
-.directions ol li {
-    margin:0;
-  padding:0.5em 0 0.5em 2em;
-  text-indent:-2em;
-  list-style-type:none;
-  counter-increment:item;
-  }
+.directions>ol>li {
+    margin: 0;
+    padding: 0.5em 0 0.5em 2em;
+    text-indent: -2em;
+    list-style-type: none;
+    counter-increment: item;
+}
 
-.directions ol li:before{
-    display:inline-block;
-  width:1.5em;
-  font-weight:bolder;
-  text-align:right;
-  content:counter(item) ".";
+.directions>ol>li:before {
+    display: inline-block;
+    width: 1.5em;
+    font-weight: bolder;
+    text-align: right;
+    content: counter(item) ".";
+}
+
+ul.sub_instructions>li {
+    margin: 0;
+    padding: 0.5em 0 0.5em 2em;
+    text-indent: -1.8em;
+    list-style-type: lower-roman;
+}
+
+ul.sub_instructions>li:before {
+    display: inline-block;
+    width: 1.5em;
+    font-weight: bolder;
+    text-align: right;
 }
 
 .food-img {
@@ -72,4 +113,47 @@ body {
     margin: auto;
     border-radius: 20px;
     border: 2px solid maroon;
+}
+
+@media print {
+
+    body{
+        padding: 0;
+        width: 9.25in;
+        background-image: none;
+        font-size: 20px;
+        margin:0;
+        color: #000;
+    }
+
+    main {
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .options-div{
+        display: none;
+    }
+
+    .food-img {
+        width: 250px;
+    }
+
+    footer {
+        display: none;
+    }
+
+    
+
+    @page {
+        size: 7in 9.25in;
+        margin: 15mm 16mm 10mm 16mm;
+    }
 }
