@@ -1,4 +1,4 @@
-.yy {
+.main-info {
     display: grid;
     padding: 2rem;
     grid-template-columns: 300px 1fr;
@@ -8,21 +8,22 @@
     margin: 0 auto;
     font: 500 100%/1.5 system-ui;
     background: rgba(244, 240, 240, 0.91);
+    border-radius: 10px;
 }
 
-.yy img {
+.main-info img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
 @media (max-width: 650px) {
-    .yy {
+    .main-info {
         display: block;
         font-size: 80%;
     }
 
-    .yy p {
+    .main-info p {
         position: relative;
         margin: -3rem 0 2rem 1rem;
         padding: 1rem;
@@ -30,18 +31,17 @@
     }
 }
 
-.yy img:hover {
+.main-info img:hover {
     transform: scale(1.1);
 }
 
-.mainn {
+.cuisine-list {
     margin-left: 20px;
     margin-right: 20px;
     display: flex;
 }
 
 .cuisine {
-
     flex: 1;
     padding: 2rem;
     max-width: 1000px;
@@ -49,6 +49,16 @@
     background: rgba(244, 240, 240, 0.91);
     max-width: 30%;
     color: rgba(252, 94, 128, 0.8);
+}
+
+.cuisine:first-of-type {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.cuisine:last-of-type {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .cuisine img {
