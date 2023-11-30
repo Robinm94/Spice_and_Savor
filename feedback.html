@@ -10,6 +10,9 @@
     <link rel="icon" href="images/logo.jpg">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/feedback.css">
+    <script src="javascript/feedback.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+ 
 </head>
 
 <body>
@@ -40,34 +43,53 @@
     <main>
         <div class="form-content">
             <h2>Please provide feedback</h2>
-            <form id="myForm" class="feedback-form" action="" method="get" autocomplete="on">
+            <form id="myForm" class="feedback-form" onsubmit="addInfo(); return false;" autocomplete="on">
                 <label for="firstname">First Name:</label>
-                <input type="text" name="firstName" accesskey="F" required autofocus><br><br>
+                <input type="text" name="firstName" id="firstname" accesskey="F" autofocus><br><br>
                 <label for="lastname">Last Name:</label>
-                <input type="text" name="lastName" accesskey="L" required><br>
+                <input type="text" name="lastName" id="lastname" accesskey="L" ><br>
+
+
                 <p>Which one you like the most:</p>
-                <input type="checkbox" class="checkbox" id="review1" name="review1" value="review1"><label for="review1">Indian Cuisine</label></input><br>
-                <input type="checkbox" id="review2" name="review2" value="review2"><label for="review2">Chinese Cuisine</label></input><br>
-                <input type="checkbox" id="review3" name="review3" value="review3"><label for="review3">Mexican Cuisine</label></input><br><br>
-                <label for="comment">Reviews:</label><br>
-                <textarea name="comments" rows="5" cols="50"
-                    placeholder="Share your review about recipes."></textarea><br><br>
+                <input type="checkbox" class="checkbox" id="review1-checkbox" name="review1"
+                    value="Indian Cuisine"><label for="review1-checkbox">Indian Cuisine</label></input><br>
+                <input type="checkbox" id="review2-checkbox" name="review2" value="Chinese Cuisine"><label
+                    for="review2-checkbox">Chinese Cuisine</label></input><br>
+                <input type="checkbox" id="review3-checkbox" name="review3" value="Mexican Cuisine"><label
+                    for="review3-checkbox">Mexican Cuisine</label></input><br><br>
+
+
+                <label for="review">Reviews:</label><br>
+                <textarea name="comments" id="review" rows="5" cols="50" id="review"
+                    placeholder="Share your review about recipes.">
+                </textarea><br><br>
+
 
                 <label for="comment1">Which new recipes you want from us?</label><br>
-                <textarea name="comments1" rows="5" cols="50" placeholder="Share new recipes names."></textarea><br><br>
+                <textarea name="comments1" id="comment1" rows="5" cols="50"
+                    placeholder="Share new recipes names."></textarea><br><br>
 
                 <button type="submit" value="Submit">Submit</button>
 
                 <button type="reset" value="Reset">Reset</button>
                 <div class="end"></div>
+                <label for="output">Output:</label><br>
+                    <textarea id="output" rows="10" cols="50"></textarea><br><br>
+                
             </form>
         </div>
     </main>
     <footer>
         <div class="footer-div">
-            <div>Contact us: <a href="tel:123-456-7890">123-456-7890</a></div>
-            <div>Email: <a href="mailto:spiceandsavor@gmail.com">spiceandsavor@gmail.com</a></div>
-            <div><a href="feedback.html">Feedback</a></div>
+            <div class="social-icons">
+                <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div> 
+            <div class="ya"><a href="tel:123-456-7890">Contact: 123-456-7890</a></div>
+            <div class="ya"><a href="mailto:spiceandsavor@gmail.com">Email: spiceandsavor@gmail.com</a></div>
+            <div class="ya"><a href="feedback.html">Feedback</a></div>
         </div>
     </footer>
 </body>

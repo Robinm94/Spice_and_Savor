@@ -5,6 +5,7 @@ main {
 .form-content {
     margin: 0 auto;
     width: max-content;
+    height: 100%;
 }
 
 .form-content h2 {
