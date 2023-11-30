@@ -8,7 +8,8 @@
     <link rel="icon" href="images/logo.jpg">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/home.css">
-
+    <script src="javascript/home.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
@@ -19,36 +20,71 @@
                     <a href="home.html"><img class="logo" src="images/food1.png">Spice and Savor</a>
                 </div>
                 <ul class="nav-items">
-                        <a href="recentandsaved.html">Recent & Saved Recipes</a>
+                    <a href="recentandsaved.html">Recent & Saved Recipes</a>
                     </li>
                 </ul>
-            </div>    
+            </div>
         </nav>
     </header>
+    <div class="carousel-container">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <a href="indian\indian.html">
+                    <img src="images/indian_food.jpg" style="width:100%">
+
+                    <div class="text">Indian Food</div>
+                </a>
+            </div>
+            <div class="mySlides fade">
+                <a href="chinese\chinese.html">
+                    <img src="images/chinese_food.jpeg" style="width:100%">
+                    <div class="text">Chinese Food</div>
+                </a>
+            </div>
+            <div class="mySlides fade">
+                <a href="mexican\mexican.html">
+                    <img src="images/mexican_food.jpeg" style="width:100%">
+                    <div class="text">Mexican Food</div>
+                </a>
+            </div>
+
+            <a class="prev" onclick="prevSlide()">&#10094;</a>
+            <a class="next" onclick="nextSlide()">&#10095;</a>
+        </div>
+        <br>
+    </div>
     <div class="main-info">
         <img src="images\homie.jpg">
-        <p class="main-info-text">Food is any substance consumed by an organism for nutritional support. Food is usually of plant, animal, 
-            or fungal origin and contains essential nutrients such as carbohydrates, fats, proteins, vitamins, or minerals.</p>
+        <p class="main-info-text">Food is any substance consumed by an organism for nutritional support. Food is usually
+            of plant, animal,
+            or fungal origin and contains essential nutrients such as carbohydrates, fats, proteins, vitamins, or
+            minerals.</p>
     </div>
-    <div class="cuisine-list">
+    <!-- <div class="cuisine-list">
         <div class="cuisine">
-            <a href="indian\indian.html"><img src="images\ifood.jpeg"><p class="if">Indian Food</p></a>
+            <a href="indian\indian.html"><img src="images\ifood.jpeg"><p class="cuisine_text">Indian Food</p></a>
         </div>
 
         <div class="cuisine">
-            <a href="chinese\chinese.html"><img src="images\cfood.jpeg"><p class="if">Chinese Food</p></a>
+            <a href="chinese\chinese.html"><img src="images\cfood.jpeg"><p class="cuisine_text">Chinese Food</p></a>
         </div>
 
         <div class="cuisine">
-            <a href="mexican\mexican.html"><img src="images\mfood.jpeg"><p class="if">Mexican Food</p></a>
+            <a href="mexican\mexican.html"><img src="images\mfood.jpeg"><p class="cuisine_text">Mexican Food</p></a>
         </div>
-    </div>
+    </div> -->
 
     <footer>
         <div class="footer-div">
-            <div>Contact us: <a href="tel:123-456-7890">123-456-7890</a></div>
-            <div>Email: <a href="mailto:spiceandsavor@gmail.com">spiceandsavor@gmail.com</a></div>
-            <div><a href="feedback.html">Feedback</a></div>
+            <div class="social-icons">
+                <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div> 
+            <div ><a href="tel:123-456-7890">Contact: 123-456-7890</a></div>
+            <div ><a href="mailto:spiceandsavor@gmail.com">Email: spiceandsavor@gmail.com</a></div>
+            <div ><a href="feedback.html">Feedback</a></div>
         </div>
     </footer>
 </body>

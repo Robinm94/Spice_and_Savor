@@ -15,6 +15,7 @@ var storeRecipe = function(recipe_type) {
 var saveRecipe = function() {
     var recipe_type = "savedrecipes";
     storeRecipe(recipe_type);
+    alert("Recipe saved successfully!");
 };
 
 var recentRecipes = function() {
