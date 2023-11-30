@@ -53,6 +53,14 @@ body {
     color: #fff;
 }
 
+#success_message {
+    text-align: center;
+    color: maroon;
+    font-weight: 700;
+    margin-bottom: 0;
+    display: none;
+}
+
 .ingredients h2,
 .directions h2 {
     font-style: italic;
