@@ -15,7 +15,10 @@ var storeRecipe = function(recipe_type) {
 var saveRecipe = function() {
     var recipe_type = "savedrecipes";
     storeRecipe(recipe_type);
-    alert("Recipe saved successfully!");
+    $('success_message').style.display = 'block';
+    setTimeout(function(){
+        $('success_message').style.display = 'none';
+    }, 2000);
 };
 
 var recentRecipes = function() {
