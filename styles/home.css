@@ -68,7 +68,7 @@
     border-radius: 10px;
 }
 
-.cuisine .if {
+.cuisine_text {
 
     text-align: center;
     background-color: rgb(248, 184, 129);
@@ -76,6 +76,95 @@
     padding: 5px;
     font-weight: 700;
     color: maroon;
+}
+
+.carousel-container * {
+    box-sizing: border-box;
+}
+
+/* .carousel-container {
+    display: flex;
+    overflow-x: auto;
+} */
+
+.slideshow-container {
+    display: flex;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.mySlides {
+    width: 70%;
+    min-width: 70%;
+    padding: 0 1%;
+}
+
+.mySlides:first-of-type {
+    margin-left: -56%;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 42px;
+    margin-top: -25px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 15%;
+}
+
+.next {
+    left: calc(83% - 42px);
+    border-radius: 3px 0 0 3px;
+}
+
+
+.text {
+    color: #f2f2f2;
+    font-size: 24px;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 5px;
+    width: 68%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 10px;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 @media (max-width: 650px) {
