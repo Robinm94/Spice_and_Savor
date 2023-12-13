@@ -26,11 +26,11 @@ body {
     padding-right: 10px;
 }
 
-.options-div{
+.options-div {
     display: flex;
     margin: 1em auto;
     justify-content: center;
-    
+
 }
 
 .option-button {
@@ -123,14 +123,28 @@ ul.sub_instructions>li:before {
     border: 2px solid maroon;
 }
 
+.ui-widget-header {
+    background: #800000;
+}
+
+.print_options {
+    display: flex;
+    justify-content: space-around;
+}
+
+#print_button_final {
+    margin: 20px auto;
+
+}
+
 @media print {
 
-    body{
+    body {
         padding: 0;
         width: 9.25in;
         background-image: none;
         font-size: 20px;
-        margin:0;
+        margin: 0;
         color: #000;
     }
 
@@ -146,7 +160,7 @@ ul.sub_instructions>li:before {
         display: none;
     }
 
-    .options-div{
+    .options-div {
         display: none;
     }
 
@@ -158,7 +172,9 @@ ul.sub_instructions>li:before {
         display: none;
     }
 
-    
+    .hidden-food-img {
+        display: none;
+    }
 
     @page {
         size: 7in 9.25in;

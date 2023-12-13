@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MaPo Tofu Recipe</title>
     <link rel="icon" href="../images/logo.jpg">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+        integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/blitzer/jquery-ui.css">
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/recipe.css">
     <script src="../javascript/recipe.js"></script>
@@ -48,8 +53,22 @@
             </section>
         </div>
         <div class="options-div">
-            <div id="print_button" class="option-button" >Print Recipe</div>
+            <div id="print_button" class="option-button">Print Recipe</div>
             <div id="save-recipe-button" class="option-button">Save Recipe</div>
+        </div>
+        <div id="dialog" title="Print Options" style="display: none;">
+            <p>Would you like to print with images?</p>
+            <div class="print_options">
+                <div>
+                    <input type="radio" id="print_with_image" name="print_image" value="print_with_image" checked>
+                    <label for="print_with_image">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" id="print_without_image" name="print_image" value="print_without_image">
+                    <label for="print_without_image">No</label>
+                </div>
+            </div>
+            <div id="print_button_final" class="option-button">Print Recipe</div>
         </div>
         <p id="success_message">Recipe saved successfully!</p>
         <div class="ingredients">
