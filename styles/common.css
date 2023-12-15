@@ -195,16 +195,12 @@ main {
 
 @media screen and (max-width: 900px) and (min-width: 769px) {
     body {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
-@media screen and (max-width: 768px) and (min-width: 481px) {
+@media screen and (max-width: 768px) {
     body {
-        font-size: 12px;
-    }
-
-    .logo-home a {
         font-size: 18px;
     }
 
@@ -215,4 +211,39 @@ main {
     .navigation li a:hover {
         border-bottom: none;
     }
+
+    .nav-bar{
+        width: 100%;
+        margin: 0 5px;
+    }
+
+    .logo{
+        height: 36px;
+    }
+
+    .logo-home a {
+        font-size: 18px;
+    }
+
+    main{
+        width: auto;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .navigation{
+        height: 65px;
+    }
+
+    .nav-bar{
+        margin: 0;
+    }
+
+    .navigation li {
+        display: flex;
+        align-items: center;
+    }
+
 }

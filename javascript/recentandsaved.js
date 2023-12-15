@@ -27,6 +27,12 @@ var loadSavedRecipes = function () {
     loadRecipes(load_type);
 }
 
+function clearSave(){
+    localStorage.removeItem("savedrecipes");
+    localStorage.removeItem("recentrecipes");
+    window.location.reload();
+}
+
 window.onload = function () {
     loadRecentRecipes();
     loadSavedRecipes();

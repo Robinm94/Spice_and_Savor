@@ -17,24 +17,6 @@
     border-radius: 10px;
 }
 
-@media (max-width: 650px) {
-    .main-info {
-        display: block;
-        font-size: 80%;
-    }
-
-    .main-info p {
-        position: relative;
-        margin: -3rem 0 2rem 1rem;
-        padding: 1rem;
-        background: rgba(white, 0.8);
-    }
-}
-
-.main-info img:hover {
-    transform: scale(1.1);
-}
-
 .carousel-container * {
     box-sizing: border-box;
 }
@@ -81,12 +63,13 @@
 .next {
     left: calc(83% - 42px);
     border-radius: 3px 0 0 3px;
+    text-align: right;
 }
 
 
 .text {
     color: #f2f2f2;
-    font-size: 24px;
+    font-size: 30px;
     padding: 10px 0;
     position: absolute;
     bottom: 5px;
@@ -109,6 +92,7 @@
     animation-duration: 0.8s;
 }
 
+
 @keyframes fade {
     from {
         opacity: .4
@@ -119,10 +103,39 @@
     }
 }
 
-@media (max-width: 650px) {
-    .cuisine {
-        display: block;
-        font-size: 80%;
+@media (min-width: 650px) {
+    .main-info img:hover {
+        transform: scale(1.1);
     }
 
+}
+
+@media (max-width: 650px) {
+    .main-info {
+        padding: 20px 10px;
+        display: block;
+        font-size: 18px;
+    }
+
+    .main-info p {
+        position: relative;
+        margin: 15px 10px 20px 10px;
+        padding: 0;
+        text-align: justify;
+    }
+
+    .text {
+        font-size: 18px;
+        padding: 8px 0;
+    }
+
+    .prev,
+    .next {
+        padding: 10px;
+        width: 30px;
+    }
+
+    .next {
+        left: calc(83% - 30px);
+    }
 }
